@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%! 
+	public int sum() { // 함수 선언 
+		int a =10, b =20, c;
+		c = a+b;
+		return c;
+}
+%>
+
+<% 
+	// 스크립트릿 jsp 문법은 여기에 추가함
+%>
+
+<%=
+
+ 	//표현식 써야해서 값을 넣을 때 
+
+%>

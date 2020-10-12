@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "green.Start" %>
+
+<%
+	Start start = new Start();
+	String start1 = (String)request.getAttribute("msg");
+	out.print(start1);
+%>

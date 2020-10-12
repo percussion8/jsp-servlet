@@ -1,0 +1,15 @@
+package green;
+
+public class Echo {
+
+	private String msg=""; // 멤버변수
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	
+}
