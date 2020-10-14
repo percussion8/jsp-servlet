@@ -3,6 +3,10 @@ D:\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3550632838.inde
 \basic1007_1\src
 D:\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3847281054.index
 \1013\src
+D:\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2696263740.index
+\mysql_1014_1\src
+D:\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2445815825.index
+\1014\src
 D:\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\237944273.index
 \basic1007_1\src
 D:\servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2130023921.index

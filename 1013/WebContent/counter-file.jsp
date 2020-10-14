@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*" %>
+<%@ page import= "java.lang.*" %>
 <jsp:useBean id="cnt" scope="application" class="green.Counter">
 </jsp:useBean>
 
@@ -14,7 +15,6 @@
 	
 	
 	String count_file = "c:/jsp/count.txt"; //저장할 내용의 파일 생성
-	
 	if(cnt.getCount() == 0) {
 		int j =0;
 		String old = null;
@@ -25,7 +25,9 @@
 				if((old = input.readLine())!=null) { // 한 줄씩 읽어들임 
 					int i = Integer.parseInt(old);
 					for(j=0; j<i; j++) {
+						System.out.println("파일의 내용을 읽은 값은 무언가?" +old); //추가
 						cnt.plusCount();
+						System.out.println("파일의 내용을 읽은 값은 무언가?" +cnt.getCount()); //추가
 					}
 					input.close(); //파일 닫기
 				}
