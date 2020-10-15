@@ -31,7 +31,7 @@
       if(!(rs.next())) {
     	  //Statement 객체 생성
     	  sql = "insert into woori(id,password,name,email)";
-    	  sql = sql + "values('" + id + "'," + password+",";
+    	  sql = sql + " values('" + id + "'," + password+",";
     	  sql = sql + "'" + name+"','"+ email + "')"; 
     	  //insert 문을 이용하여 데이터 추가
     	  cnt = stmt.executeUpdate(sql);
@@ -79,7 +79,7 @@
    }
    
    
-   %>
+%>
 
 [<a href = main.html>메인으로</a>]
 &nbsp; [<a href = "insert.html">회원등록페이지로</a>]
