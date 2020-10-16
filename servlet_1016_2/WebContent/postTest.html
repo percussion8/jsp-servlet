@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>post 요청</title>
+</head>
+<body>
+    <h3> post 요청 1 - 로그인 폼</h3>
+    <p>로그인 폼은 입력 값 노출을 방지 하기 위해 post를 사용해야 한다.</p>
+    <form action="login" method="post">
+        아이디 : <input type="text" name="id">
+        암호 : <input type="text" name="id">
+        <input type="text" value="전송">
+    </form>
+    <h3>post 요청 2 - 계산기 </h3>
+    <p>url에 값이 포함되지 않아서 즐겨 찾기에 추가해도 소용없다.</p>
+    <form action="calculator" method="post">
+        <input type="text" name="v1" size="4">
+        <select name="op" id="">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="v2" size="4">
+        <input type="submit" value="="><br>
+    </form>
+    <!-- login 서블릿을 생성하여 위에 맞도록 설계 -->
+    <!-- interface를 설계, interface 명은 Score, 추상메서드 go, 반환타입은 정수 -->
+    <!-- 파라미터는 정수 2개  -->
+    <!-- 위의 Score를 클래스로 implements(구현/상속) 하여 3개  -->
+    <!-- Green, Bus, Tire 클래스 생성 -->
+    <!-- id 값을 1을 입력하면 Green 클래스 객체 생성 후 go 메서드(더하기 기능) 호출  -->
+    <!-- id 값을 2을 입력하면 Bus 객체 생성 후 go 메서드(빼기) 호출 -->
+    <!-- id 값을 3을 입력하면 Tire 객체 생성 후 go 메서드(곱하기) 호출 -->
+    <!-- 파라미터값은 (4,5) -->
+    <!-- 그 결과를 out.println으로 브라우저에 출력  -->
+    
+    
+</body>
+</html>

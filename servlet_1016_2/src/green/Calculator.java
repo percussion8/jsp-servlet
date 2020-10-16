@@ -24,6 +24,9 @@ public class Calculator extends HttpServlet {
 	//부모가 자식객체를 가리킨다. 
 	
 	private Map<String, Operator> operatorTable = new HashMap<String, Operator>();
+//	private Map<String, PlusOperator> operatorTable1 = new HashMap<String, PlusOperator>();
+//	private Map<String, MinusOperator> operatorTable = new HashMap<String, MinusOperator>();
+//	private Map<String, MultipleOperator> operatorTable = new HashMap<String, MultipleOperator>();
 	
 	
     public Calculator() {
