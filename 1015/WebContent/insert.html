@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src ="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
     <script>
-        function check() {
+     function check() {
             var blank =0 ;
             if(form1.id.value == "") blank =1;
             if(form1.password.value == "") blank = 1;
@@ -16,11 +17,46 @@
                 alert("모든 내용을 입력해주세요");
                 return false;
             }
-            else {
-                return true;
-            }
+            else {                
+            	return true;
+            } 
             
-        }
+     }
+            
+           /*  $("input[name=]").each(function(i,j){
+            	if($(this).val() === ""){
+            		blank =1;
+            		if(blank == 1) {
+            			alert("모든 내용을 입력해주세요");
+            		}
+                	event.preventDefault();
+                	return false;
+            	}
+            	
+            })
+            
+            
+        } 
+        
+  /*       function checkFail(fail) {
+    		for(var i of fail) if (i === "") return false;
+    		return true;
+    	}
+    	
+    	
+    	function check (){
+    		var arr = []; //배열의 초기화
+    		$("input[name=]").each(function(i,j) {
+    			arr.push($(j).val()); //input 태그의 사용자 입력값을 배열에 추가
+    		});
+    				var result = checkFail(arr); // 데이터를 확인하려고 반환값 저장
+    				//$("form").attr("action", "select.html");
+    				if(!result) {
+    					alert("빈칸이 있습니다. 채워주세요");
+    					event.preventDefault(); //다른 페이지로 이동하지 못하도록 방지
+    			}
+    		
+    	} */
         
         // 함수정의, 함수 이름 check_num, 파라미터 str,
         function check_num (str) {
@@ -38,6 +74,34 @@
         // alert("숫자만 입력하세요");
         //함수 종료 조건 return "";
         //그렇지 않으면 입력 받은 파라미터(str을 반환함)
+        
+         $(document).ready(function() {
+        	 function check() {
+        		 var arr =[];
+        		 $("input[name]").each(function(i,j) {
+        			 arr.push($(this).val());
+        			 $("form").attr("action", "insert.html");
+        			 
+        		 });
+        		 var result = checkArray(arr);
+        		 if(!result) {
+        			 alert("모두 입력하세요");
+        			 $("form").attr("action", "insert.html");
+        		 }
+        		
+        	 }
+   
+        	$("[type=submit]").click(function() {
+    			check();
+    		
+    		});
+        	
+        	$("input[name=password]").keyup(function(e){
+        		if(isNaN9$(this).val()) alert("숫자만 입력해");
+        	})
+        	
+        }) 
+        
 
     </script>
     <form action="insert.jsp" method="post" name="form1" onsubmit ="return check()">

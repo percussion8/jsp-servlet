@@ -35,7 +35,7 @@
 	 	//질의어 수행
 	 	
 	 	sql = "update woori set ";
-	 	sql = sql + "name = '"+name + "'," + "email ='" + email + "'";
+	 	sql = sql + "name ='"+name + "'," + "email ='" + email + "'";
 	 	sql = sql+ " where id = '" + id + "'";
 	 	System.out.println(sql);
 	 	stmt.executeUpdate(sql);
@@ -49,3 +49,4 @@
    
    
 %>
+<jsp:forward page = "selectall.jsp"/>

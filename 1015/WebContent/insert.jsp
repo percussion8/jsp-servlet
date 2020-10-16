@@ -16,6 +16,7 @@
    int cnt = 0;
 
    try {
+	   
       Class.forName("com.mysql.cj.jdbc.Driver");
    } catch (ClassNotFoundException e) {
       out.print(e);
@@ -23,8 +24,10 @@
    String dbURL = "jdbc:mysql://localhost:3306/member?serverTimezone=Asia/Seoul";
    String dbId = "root";
    String dbPw = "1234";
+   //System.out.println(id);
    
    try{
+	  System.out.println(id);
       conn = DriverManager.getConnection(dbURL,dbId,dbPw);
       stmt = conn.createStatement();
       rs = stmt.executeQuery("select * from woori where id ='" + id +"'");
