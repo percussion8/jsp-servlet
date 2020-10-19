@@ -31,6 +31,21 @@ public class Login extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+	//	if(request.getParameter("id").equals("1")) {
+	//		Score green = new Green();
+	//		PrintWriter out = response.getWriter();
+	//		out.println(green.go(3, 4));
+	//	}
+	//	if(request.getParameter("id").equals("2")) {
+	//		Score bus = new Bus();
+	//		PrintWriter out = response.getWriter();
+	//		out.println(bus.go(3, 4));
+	//	}
+	//	if(request.getParameter("id").equals("3")) {
+	//		PrintWriter out = response.getWriter();
+	//		out.println((new Tire()).go(3, 4));
+	//	}
 	}
 
 	
@@ -41,11 +56,10 @@ public class Login extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		String n = request.getParameter("id");
-		if(n == "1") {
-			
-		}
+		Score score = scoreTable.get(n);
+	
 		
-		
+
 		doGet(request, response);
 	}
 
