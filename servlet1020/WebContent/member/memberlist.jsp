@@ -21,6 +21,7 @@
 		%>
 		<%= member.getNo() %>,
 		<a href='update?no=<%=member.getNo() %>'><%= member.getName() %></a>,
+		<!-- update는 url no은 유니크한 멤버변수 -->
 		<%= member.getEmail() %>,	
 		<%= member.getCreatedDate() %>
 		<a href='delete?no=<%=member.getNo() %>'>[삭제]</a><br>		
