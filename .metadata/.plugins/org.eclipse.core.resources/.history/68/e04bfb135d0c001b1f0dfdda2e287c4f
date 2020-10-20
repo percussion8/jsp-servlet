@@ -1,8 +1,0 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<jsp:useBean id="MyEcho" class="green.Echo" scope="page"></jsp:useBean>
-<jsp:setProperty property="msg" name="MyEcho"/>
-
-<%
-	out.print("Echo 빈즈에서 받은 내용: " + myEcho.getMsg() + "<br>");
-%>

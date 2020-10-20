@@ -16,7 +16,7 @@ public class MemberListServlet extends HttpServlet {
    
 
    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       Connection conn = null;
+       	 Connection conn = null;
          Statement stmt = null;
          ResultSet rs = null;
          String dbURL = "jdbc:mysql://localhost:3306/studydb?serverTimezone=Asia/Seoul";
@@ -24,7 +24,7 @@ public class MemberListServlet extends HttpServlet {
          String dbPw = "1234";
          
          try{
-           Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(dbURL,dbId,dbPw);
             System.out.println("db 연결 성공" + conn);
             stmt = conn.createStatement();
