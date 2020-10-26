@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -39,9 +40,10 @@ public class MemberUpdateServlet extends HttpServlet {
 	    		   "select mno, email, mname, cre_date from members where mno = " + request.getParameter("no")
  
 	        		 );	
+	       ArrayList<Member> members = new ArrayList<Member>();
 	       	if(rs.next()) {
 	       	 //DB로부터 가져온 데이터 ResultSet에서 하나씩 가져옴 
-	              request.setAttribute("members",new Member()
+	              members.add(new Member()
 	            		  	.setNo(rs.getInt("mno"))
 	            		  	.setName(rs.getString("mname"))
 	            		  	.setEmail(rs.getString("email"))

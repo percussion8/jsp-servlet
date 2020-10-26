@@ -43,8 +43,11 @@ public class MemberAddServlet extends HttpServlet {
         String dbURL = "jdbc:mysql://localhost:3306/studydb?serverTimezone=Asia/Seoul";
         String dbId = "root";
         String dbPw = "1234";
+        System.out.println("되냐");
         
         try {
+        	System.out.println("되냐");
+            
  	       	ServletContext sc = this.getServletContext();
  	       	conn = (Connection)sc.getAttribute("conn");
             System.out.println("db 연결 성공" + conn);

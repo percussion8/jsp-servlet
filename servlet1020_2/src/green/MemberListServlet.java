@@ -26,9 +26,7 @@ public class MemberListServlet extends HttpServlet {
        Connection conn = null;
          Statement stmt = null;
          ResultSet rs = null;
-         String dbURL = "jdbc:mysql://localhost:3306/studydb?serverTimezone=Asia/Seoul";
-         String dbId = "root";
-         String dbPw = "1234";
+
 //         Member member = new Member();
 //         member.setName("이재오")
 //         		.setEmail("fff@test.com")

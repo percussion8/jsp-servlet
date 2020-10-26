@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div style="background-color:#00008b;color:#ffffff;height:20px;padding: 5px;">
-GPMS(Green Project Management System)
+	<div style="background-color:#00008b;color:#ffffff;height:20px;padding: 5px;">
+	GPMS(Green Project Management System)
+	</div>
 </body>
 </html>

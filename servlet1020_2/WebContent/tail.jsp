@@ -9,5 +9,6 @@
 <body>
 	<div style="background-color:#00008b;color:#ffffff;height:20px;padding: 5px;">
 	GPMS 저작권 2020
+	</div>
 </body>
 </html>
